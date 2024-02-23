@@ -22,3 +22,9 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Service\OmdbApi:
+        #class: App\Service\OmdbApi
+        arguments:
+            $omdbToken: 28c5b7b1
+            $omdbHost: https://www.omdbapi.com
